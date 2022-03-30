@@ -1,0 +1,48 @@
+/* IMPOSTAZIONI GENERALI */
+
+/* HEADER */
+header {background-color: aqua;
+border-radius: 15px;
+padding: 30px;
+align-items: center;}
+h1 br span text {text-align: center;
+    
+}
+header span{text-align: center;}
+/* MAIN */
+body{font-family: raleway
+    ;}
+body h2{text-align: center;}
+main h2{color: aqua;}    
+body text{
+    align-content: center;
+}
+body header h1 span{background-color: white;}
+body header h1 span{color: aqua;}
+body header h1{text-align: center;}
+main section div dl dd strong{color: aqua;}
+
+body mark{background-color: aqua;}
+
+body main{align-items: center;
+}
+/* ELEMENTI NEL MAIN */
+section h2{font-weight: 600;
+    
+
+}
+section h3{font-weight: 400;}
+
+blockquote p {background-color: rgba(128, 128, 128, 0.329);
+    border-radius: 10px;
+    padding: 30px;
+}
+/* FOOTER */
+footer{background-color:rgb(56, 56, 56);
+border-radius: 1px;
+padding: 30px;
+border-start-end-radius: 2px;
+border-top-color: rgb(165, 163, 42);}
+footer text p {align-items: center;
+}
+    
