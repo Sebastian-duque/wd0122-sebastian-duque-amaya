@@ -1,0 +1,38 @@
+
+h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+
+a{ color: darkgreen;}
+a:hover{color: magenta;}
+#header{background-color: brown;
+height: 100px;
+}
+
+#main-nav li{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin-left: -4px;
+    padding: 5px 0;
+    text-align: center;
+  
+    width: calc(100%/ 3);
+}
+
+#header li:hover{
+    background-color: black;
+
+}
+
+#header li:hover a{color: rgb(114, 241, 241);
+}
+
+
+
+#prima-section{
+    padding: 50px;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-position: center;
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+    
+
+}
