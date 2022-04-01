@@ -17,13 +17,13 @@ header div{font-size: bold;}
 
 header {
     
-    background-image: linear-gradient(green, rgb(14, 121, 80));
+    background-image: linear-gradient(rgb(19, 103, 129), rgb(11, 94, 105));
     
     width: 70vw;
     padding: 20px;
-    border: 5px solid gray;
     margin: 030px;
     align-items: center;
+    box-shadow: -5px 5px 8px;
 }
 
 
@@ -105,7 +105,7 @@ main article iframe{
 section form fieldset button:hover{color: #0d6ce9;}
 
 section {
-    background-color: grey;
+    background-color: rgb(197, 197, 197);
     padding-top: 60px;
     padding: 60px;
     
@@ -119,7 +119,7 @@ section{font-size: 140%;}
 
 }
 aside div{
-    background-color: grey;
+    background-color: rgb(199, 198, 198);
     padding-bottom: 5px;
     padding-top: 5px;
 
