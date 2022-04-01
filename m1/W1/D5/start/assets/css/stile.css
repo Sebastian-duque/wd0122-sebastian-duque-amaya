@@ -60,20 +60,47 @@ main h2{color: white ;}
 }
 blockquote{
     background-color: #e22d03;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    margin-bottom: 10vw;
 }
+.blocco p{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    color: white;
+}
+.blocco p i{
+    font-style: italic;
+}
+.blocco h2{
+    font-size: 2rem;
+}
+
 /*ASIDE*/
+
 aside{
 
-    padding-top: 10vw;
-    padding-bottom: 5vw;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    
+}
+.scrivania {
+    
+    border: solid 1px rgba(236, 232, 232, 0.938);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.scrivania img{
+    width: 100%;
     
 }
 /*FOOTER*/
 footer{
     background-color: #25a2c3;
-    padding-top: 5vw;
+    padding-top: 10vw;
     padding-bottom: 10vw;
 }
 footer{
