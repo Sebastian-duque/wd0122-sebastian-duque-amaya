@@ -1,0 +1,98 @@
+/*Stili generali*/
+
+p{ 
+    color: I#393d41;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.2rem;
+    line-height:1.65;
+    
+}
+body h1, h2, h3, h4, h5, h6{
+    color: #25a2c3;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+    
+body{text-align: center;}
+body{align-items: center;}
+
+/*HEADER*/
+
+header{
+    background-color: black;
+    
+}
+header img{
+    width: 50%;
+    height: auto;
+}
+.bottone{
+    background-color:#f84c2f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius:5px
+}
+
+/*main*/ 
+main h2{color: white ;}
+
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10vw;
+    
+  
+    
+
+}
+#banner {line-height: 10;}
+.computer{
+    
+    border-radius: 100%;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+blockquote{
+    background-color: #e22d03;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+/*ASIDE*/
+aside{
+
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+    
+}
+/*FOOTER*/
+footer{
+    background-color: #25a2c3;
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+}
+footer{
+    color: white;
+
+}
+footer h2{
+    font-size: bold;
+    color: white;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+footer hr{
+    height: 0vw;
+    width: 50vw;
+    color: white;
+    
+}
+footer a{color: white;}
+
+

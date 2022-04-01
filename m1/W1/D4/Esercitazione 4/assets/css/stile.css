@@ -9,10 +9,19 @@ h1, h2{font-weight: bold;}
 header div img{
     align-items: center;
     
-   
+}
+header div p{
+    font-weight: 700;
+    color: white;
+}
+header nav ul li{
+    font-weight: 700;
 
 }
+header nav ul li:hover{
+    color: white;
 
+}
 header div{font-size: bold;}
 
 header {
