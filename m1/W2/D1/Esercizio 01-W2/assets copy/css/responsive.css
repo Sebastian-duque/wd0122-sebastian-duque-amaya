@@ -1,0 +1,51 @@
+@media (min-width: 320px) {
+    html {font-size: 45%;}
+body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center;
+    text-align: center;
+    width: 35%;
+}
+table{ 
+    width: 10%;}
+}
+
+
+    
+@media (min-width: 758px) {
+    
+    html {font-size: 55%;}
+    body { 
+        font-family: Poppins, 'Helvetica Neue', sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 15px;
+        background-image: url('../img/sfondo.png');
+        background-position: center center;
+        text-align: center;
+        width: 80%;
+    }
+    table{ 
+        width: 10%;}
+}
+@media (max-width:1200px) {
+    
+    html {font-size: 62.5%;}
+    body { 
+        font-family: Poppins, 'Helvetica Neue', sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 15px;
+        background-image: url('../img/sfondo.png');
+        background-position: center center;
+        text-align: center;
+        
+    }
+    table{ 
+        width: 200%;}
+    
+}

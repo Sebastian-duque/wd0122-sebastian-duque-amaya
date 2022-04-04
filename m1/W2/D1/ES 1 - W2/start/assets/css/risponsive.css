@@ -1,0 +1,66 @@
+@media (min-width: 320px) {
+    html {font-size: 55%;}
+    body {
+        font-family: Poppins, 'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-right: px;
+        background-image: url('../img/sfondo.png');
+        background-position: center;
+        width: 290px;
+        margin: auto;
+    }
+    header {
+        
+        background: rgb(0,160,198);
+        background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        box-shadow: 0 3px 3px #444;
+        margin-bottom: 1.5em;
+        padding: -20px -20px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        align-items: center;
+        width: 290px;
+    }
+    
+    }
+@media (min-width: 768px) {
+    html {font-size: 80%;}
+    body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center;
+}
+header {
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+main {
+    background-color: #fff;
+    box-shadow: 0 3px 3px #444;
+    padding: 2em 1em;
+    margin-bottom: 10em ;
+}
+    
+}
+  
+
+    

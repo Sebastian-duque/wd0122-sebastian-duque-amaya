@@ -1,0 +1,152 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    font-family: poppins;}
+body     
+    
+h1, h2{font-weight: bold;}
+
+/* HEADER */
+header div img{
+    align-items: center;
+    
+}
+header div p{
+    font-weight: 700;
+    color: white;
+}
+header nav ul li{
+    font-weight: 700;
+
+}
+header nav ul li:hover{
+    color: white;
+
+}
+header div{font-size: bold;}
+
+header {
+    
+    background-image: linear-gradient(rgb(19, 103, 129), rgb(11, 94, 105));
+    
+    width: 70vw;
+    padding: 20px;
+    margin: 030px;
+    align-items: center;
+    box-shadow: -5px 5px 8px;
+}
+
+
+header p{
+    text-align: center;
+}
+header li{
+    list-style-type: none;
+    text-align: center;
+
+}
+/* MAIN */
+
+
+body{
+    margin-bottom: 20px;
+}
+body{
+    align-items: center;
+}
+body{
+    background-image: url(../img/sfondo.png);
+    background-size: 200vw;
+    background-position: center;
+    background-repeat: repeat;
+    margin-left: 25px ;
+    margin-right: 25px;
+    
+}
+
+body {line-height: 180%;}
+main{
+    background-color: white;
+    width: 55vw;
+    height: 250vw;
+    padding: 20px;
+    border: 0.5px soft black;
+    margin: 30px;
+    box-shadow: -3px 3px 8px;
+} 
+main p{font-size:400;}
+main article h1, h2{text-align: center;}    
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+ul li code{background-color: grey;
+    border-radius: 15%;
+    padding: 0.2%;
+
+}
+
+
+/* TABELLE */
+#tabella {
+    font-family: poppins;
+  border-collapse: collapse;
+  width: 100%;
+}
+#tabella td, #tabella th{
+    text-align: center;
+    padding: 8px
+}
+#tabella th{ 
+    padding-top: 12px;
+    padding: 12px;
+    text-align: center;
+    background-color: #0d6ce9;
+    color: white;
+    border-bottom: 0.5px #0d6ce9;
+}
+
+
+/* FORM */
+main article iframe{
+    align-items: center;
+    border-radius: 30px;
+    height: 200px;
+    width: 350px;
+}
+section form fieldset button:hover{color: #0d6ce9;}
+
+section {
+    background-color: rgb(197, 197, 197);
+    padding-top: 60px;
+    padding: 60px;
+    
+}
+section{font-size: 140%;}
+
+/* ELEMENTI NELL' ASIDE */
+.div1{
+    background-color: rgb(128, 128, 128);
+    padding: 5px;
+
+}
+aside div{
+    background-color: rgb(199, 198, 198);
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    
+    background-color: rgb(14, 73, 73);
+    width: 70vw;
+    height: 100vw;
+    padding: 20px;
+    border: 0.5px soft black;
+    margin: 30px;
+    box-shadow: -5px 5px 8px;
+    
+}
+footer address a:hover{color: blueviolet;}
