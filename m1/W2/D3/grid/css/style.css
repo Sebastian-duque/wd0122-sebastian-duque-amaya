@@ -1,0 +1,60 @@
+.container{
+    display: grid;
+    background-color: aqua;
+    
+}
+
+.blocco{
+    background-color: yellow;
+    border: 1px solid brown;
+    font-size: 4rem;
+   
+
+}
+#n1{
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 260px 78px 100px;
+}
+#n2{
+    grid-template-columns: repeat(4,70px);
+    row-gap: 10px;
+    column-gap: 5px;
+    justify-content: space-evenly;
+    
+
+}
+
+/*SITO*/
+
+header{
+    grid-area: header;
+    background-color: yellow;
+
+}
+main{
+    grid-area: main;
+    background-color: rgb(255, 145, 0);
+}
+aside{
+    grid-area: aside;
+    background-color: rgb(0, 255, 85);
+
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(231, 14, 166);
+}
+article{
+    height: 200px;
+    background-color: rgb(2, 128, 128);
+    margin-bottom: 30px;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    min-height: 100vh;
+    grid-template-rows: 70px auto 70px;
+}
