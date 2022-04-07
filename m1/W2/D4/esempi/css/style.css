@@ -1,0 +1,117 @@
+.div1{
+    width: 200px;
+    height: 100px;
+    transition: width 2.5s, height 2.5s;
+    background-color: darkred;
+
+}
+
+.div1:hover{
+    width:100%;
+    height: 300px;
+    background-color: chartreuse;
+
+}
+.contenitore{
+
+    position: relative;
+}
+.title, .div1{
+    display: inline-block;
+}
+.title{
+    position: absolute;
+    right:10px;
+    z-index: 2;
+    color: white;
+    line-height: 50px;
+    top: calc(50% -25px);
+}
+/*ANIMAZONE*/
+
+.contenitore2{
+
+    position: relative;
+}
+.div2{
+    width: 200px;
+    height: 100px;
+    background-color: darkred;
+    animation: allarga;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes allarga{
+    from {width:200px;height: 100px;}
+    to {width:100%;height: 300px;}
+    
+}
+
+/*ANIMAZONE22*/
+.blocco{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+
+}
+.c1 {
+    animation-name: colore;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+}
+@keyframes colore{
+    0%{background-color: orange}
+    50%{background-color:lightblue}
+    100%{background-color:orange}
+}
+
+.c2 {
+    animation-name: sposta, colore;
+    animation-duration: 3s, 5s; 
+    animation-iteration-count: infinite;
+}
+@keyframes sposta{
+    0%{margin-left: 0;}
+    50%{margin-left: 300px;}
+    100%{margin-left: 0;}
+}
+.c3 {
+    animation-name: sposta-ruota;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+}
+@keyframes sposta{
+    0%{margin-left: 0; transform: rotate(0deg)}
+    50%{margin-left: 300px;transform: rotate(90deg)}
+    100%{margin-left: 0;transform: rotate(0deg)}
+}
+.c4 {
+    animation-name: pulsa;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    box-shadow:0px 0px 15px#000, 0px 0px 15px#000;
+    width: 100px;
+    height: 100px;
+    border-radius:100%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes sposta{
+    0%{box-shadow:0px 0px 150px#000, 0px 0px 150px#000}
+    50%{box-shadow:0px 0px 1px#000, 0px 0px 1px#000}
+    100%{box-shadow: 0px 0px 150px#000, 0px 0px 150px#000}
+}
+
+/*ANIMAZIONI 3D*/
+#area-3d{
+    perspective: 200px;
+    height: 100vh;
+    width: 100%;
+    background-color: orange;
+}
+.c5{
+    transform: translateZ(-100px);
+}

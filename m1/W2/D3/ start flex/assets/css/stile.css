@@ -123,6 +123,7 @@ main {
             padding: 2em;
         }
     }
+    
 
 section { 
     background-color: #e3e3e3;
@@ -267,7 +268,25 @@ button {
     .classe{
         display:flex;
         flex-direction: row;
+
     }
+    aside .classe {
+        display: flex;
+    }
+    aside .classe div {
+        flex-grow: 1;
+        flex-basis: 30%;
+    }
+    aside .classe div:not(:last-child) {
+        margin-right: 4%;
+    }
+}
+@media screen  and (min-width:800px) {
+    aside.classe{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
 }
 aside h2 {
     text-align: center;
@@ -277,14 +296,14 @@ aside h2 {
     text-transform: uppercase;
     margin-bottom: 1em;
 }
-aside div{
+aside .classe div{
     background-color: #e3e3e3;
     border: 1px solid #c3c3c3;
     margin-bottom: 1em;
     padding: 1em;
     flex-basis: 30%;
 }
-aside div p:last-child {
+aside .classe div p:last-child {
     margin-bottom: 0;
     font-size: 0.8em;
     text-align: right;
