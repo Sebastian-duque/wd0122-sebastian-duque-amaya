@@ -1,0 +1,65 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem #000;
+    line-height: 1.8;
+
+}
+header {
+    background-color: white;
+    height: 200px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.chiedi{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,8,135,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,8,135,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,8,135,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#080887",GradientType=1);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    
+}
+
+/* HEADER */
+
+#menu{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+#apri-menu{
+    display: none;
+}
+input:checked + #menu{
+    height: 100px;
+}
+
+/* MAIN */
+blockquote {
+    width: auto;
+    height: 200vh;
+    background-color: #0c0633;
+}   
+#sottosfondo{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10vw;
+}
+
+/* FOOTER */
+footer{
+    background-color:rgb(238, 238, 238);
+    height: 100px;
+    width: auto;
+}
+
+
+/* RESPONSIVE */

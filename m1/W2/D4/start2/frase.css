@@ -14,3 +14,15 @@ div{
     background-color: 0%;
     border: 1px solid #000;
 }
+i:nth-child(1){
+    position: absolute;
+
+}
+i:nth-child(2){
+    position: absolute;
+
+}
+i:nth-child(3){
+    position: absolute;
+
+}
