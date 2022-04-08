@@ -4,6 +4,18 @@ body {
     font-size: 1.5rem #000;
     line-height: 1.8;
 
+
+}
+h1{
+    font-size:4rem;
+    
+
+}
+.con, .we{
+    text-align: center;
+}
+h2{
+    font-size:3.5rem;
 }
 header {
     background-color: white;
@@ -13,7 +25,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.chiedi{
+.chiedi, .scrivici, .invia{
     background: rgb(2,0,36);
     background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,8,135,1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,8,135,1) 100%);
@@ -24,6 +36,7 @@ header {
     text-decoration: none;
     color: white;
     padding: 15px 30px;
+    margin: 15px 0 15px 0;
     
 }
 
@@ -33,6 +46,8 @@ header {
     height: 0;
     overflow: hidden;
     transition: height 0.5s;
+    
+    flex: end;
 }
 #apri-menu{
     display: none;
@@ -42,22 +57,37 @@ input:checked + #menu{
 }
 
 /* MAIN */
+.contatti{
+    display: flex;
+    flex-direction: column;
+}
+
 blockquote {
     width: auto;
-    height: 200vh;
+    height: 26vh;
     background-color: #0c0633;
-}   
+}  
+blockquote p, h3{
+    color: white;
+    text-align: center;
+} 
 #sottosfondo{
     background-image: url(../images/banner.jpg);
-    background-repeat: no-repeat;
+    background-repeat:cover;
     background-position: center;
-    padding-top: 10vw;
+    text-align: left;
+}
+aside, .centro{
+    text-align: center;
+}
+p i{
+    color: red;
 }
 
 /* FOOTER */
 footer{
     background-color:rgb(238, 238, 238);
-    height: 100px;
+    height: 250px;
     width: auto;
 }
 
