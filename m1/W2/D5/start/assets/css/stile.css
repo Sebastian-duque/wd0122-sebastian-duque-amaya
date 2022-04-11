@@ -3,6 +3,7 @@ body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.5rem #000;
     line-height: 1.8;
+    
 
 
 }
@@ -17,15 +18,23 @@ h1{
 h2{
     font-size:3.5rem;
 }
+h3{
+    font-size:2rem;
+}
 header {
     background-color: white;
-    height: 200px;
+    height: 80px;
     width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    box-shadow: 0 2px 2px #444;
+    margin-bottom: 40px;
 }
-.chiedi, .scrivici, .invia{
+header div {
+    margin: 20px 20px ;
+}
+.chiedi, .scrivici, .invia, .registrati{
     background: rgb(2,0,36);
     background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,8,135,1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(8,8,135,1) 100%);
@@ -39,8 +48,29 @@ header {
     margin: 15px 0 15px 0;
     
 }
+main{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.scrivici, .invia {
+    align-items: center;
+}
+.footer {
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+address{
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
 
 /* HEADER */
+header nav div {
+    display: flex;
+    flex-direction: flex-end;
+}
 
 #menu{
     height: 0;
@@ -53,7 +83,7 @@ header {
     display: none;
 }
 input:checked + #menu{
-    height: 100px;
+    height: 200px;
 }
 
 /* MAIN */
@@ -64,23 +94,42 @@ input:checked + #menu{
 
 blockquote {
     width: auto;
-    height: 26vh;
+    height: 35vh;
     background-color: #0c0633;
+    padding-top: 10vh;
 }  
 blockquote p, h3{
     color: white;
     text-align: center;
+    align-items: center;
 } 
-#sottosfondo{
-    background-image: url(../images/banner.jpg);
-    background-repeat:cover;
+.blockquote{
+    display: flex;
+    flex-direction: column;
+}
+.sottosfondo{
+    background-image: url("../images/banner.jpg");
+    
+    width: auto;
     background-position: center;
     text-align: left;
+    border: 1px solid red;
+}
+.are{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.are img{
+    width: 100%;
 }
 aside, .centro{
     text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
-p i{
+div i{
     color: red;
 }
 
@@ -90,6 +139,7 @@ footer{
     height: 250px;
     width: auto;
 }
+
 
 
 /* RESPONSIVE */
