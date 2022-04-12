@@ -44,8 +44,9 @@ header div {
     font-weight: 700;
     text-decoration: none;
     color: white;
-    padding: 15px 30px;
-    margin: 15px 0 15px 0;
+    padding: 10px 25px;
+    
+    
     
 }
 main{
@@ -67,10 +68,11 @@ address{
 }
 
 /* HEADER */
-header nav div {
+#menu{
     display: flex;
-    flex-direction: flex-end;
+    flex-direction: column;
 }
+
 
 #menu{
     height: 0;
@@ -101,19 +103,22 @@ blockquote {
 blockquote p, h3{
     color: white;
     text-align: center;
-    align-items: center;
+    
 } 
 .blockquote{
     display: flex;
-    flex-direction: column;
+    
+    
+    
 }
 .sottosfondo{
+    display: block;
+    flex-direction: column;
     background-image: url("../images/banner.jpg");
-    
     width: auto;
     background-position: center;
     text-align: left;
-    border: 1px solid red;
+    padding:30px;
 }
 .are{
     margin-left: 20px;
@@ -143,3 +148,9 @@ footer{
 
 
 /* RESPONSIVE */
+@media screen and (min-width:768px) {
+   
+    
+    
+    
+}

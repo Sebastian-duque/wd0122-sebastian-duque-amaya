@@ -12,5 +12,9 @@ var _pet = 'leone';
 console.log(_pet);
 var _pet2 = 'pantera';
 document.write(_pet2);
+var pet = 'capra'
+dovument.write(pet);
+var pet = 'fenicottero'
+console.log(pet);
 
 //var 12 = 'numero';
