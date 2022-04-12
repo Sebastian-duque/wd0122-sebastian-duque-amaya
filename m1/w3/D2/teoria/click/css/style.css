@@ -1,0 +1,7 @@
+.blocco{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(71, 223, 116);
+    cursor: pointer;
+}

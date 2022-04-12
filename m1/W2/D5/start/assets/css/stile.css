@@ -66,7 +66,9 @@ address{
     margin-right: 30px;
     
 }
-
+body p i{
+    color: red;
+}
 /* HEADER */
 #menu{
     display: flex;
@@ -79,7 +81,7 @@ address{
     overflow: hidden;
     transition: height 0.5s;
     
-    flex: end;
+    
 }
 #apri-menu{
     display: none;
@@ -93,14 +95,22 @@ input:checked + #menu{
     display: flex;
     flex-direction: column;
 }
-
+.contatto{
+    display: flex;
+    flex-direction: column;
+}
 blockquote {
     width: auto;
     height: 35vh;
     background-color: #0c0633;
     padding-top: 10vh;
 }  
-blockquote p, h3{
+blockquote p{
+    color: white;
+    text-align: center;
+    
+} 
+blockquote h3{
     color: white;
     text-align: center;
     
@@ -121,18 +131,42 @@ blockquote p, h3{
     padding:30px;
 }
 .are{
+    display: flex;
+    flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 .are img{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+.medio{
+    display: flex;
+    flex-direction: column;
+}
+.medi{
+    display: flex;
+    flex-direction: column;
+}
+.informazioni{
+    display: flex;
+    flex-direction: column;
 }
 aside, .centro{
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+}
+.emoji{
+    display: flex;
+    flex-direction: column;
 }
 div i{
     color: red;
@@ -144,13 +178,40 @@ footer{
     height: 250px;
     width: auto;
 }
-
-
-
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.feet{
+    display: flex;
+    flex-direction: column;
+}
+address{
+    align-items: center;
+    justify-content:space-between;
+}
 /* RESPONSIVE */
 @media screen and (min-width:768px) {
-   
-    
-    
-    
+   .coder{
+       display: flex;
+       flex-direction: row;
+    } 
+    .contatti{
+        display: flex;
+        flex-direction: row;
+        margin-right: 5vw;
+    }
+    .medio{
+        display: flex;
+        flex-direction: row;
+    }
+    .note{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer{
+        display: flex;
+        flex-direction:row;
+        
+    }
 }
