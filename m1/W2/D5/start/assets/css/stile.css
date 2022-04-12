@@ -160,6 +160,45 @@ aside, .centro{
     margin-top: 2em;
     margin-bottom: 2em;
 }
+/* TABELLA */
+.prezzi{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.prezzi-interi{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+.prezzi-interi td, .prezzi-interi th{
+    padding: 8px;
+
+}
+.prezzi-interi tr:nth-child(even){
+    background-color: #d2dce7;
+}
+.prezzi-interi th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #486585;
+    color: #fff;
+
+}
+.prezzi-interi tr{
+    text-align: center;
+}
+.prezzi-mobile{
+    text-align: center;
+    width: 100%;
+    text-align: left;
+}
+.prezzi-mobile td:nth-child(1){
+    font-weight: 700;
+}
+
+
 .note{
     display: flex;
     flex-direction: column;
@@ -190,6 +229,7 @@ address{
     align-items: center;
     justify-content:space-between;
 }
+
 /* RESPONSIVE */
 @media screen and (min-width:768px) {
    .coder{
