@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calcolatrice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="base">
+    <div class="calc">
+        <div>
+            
+        </div>
+        <div class="cal">
+         <input type="text" id="display">
+         
+         <button data-numero="1" onclick="addNumero(this)">1</button>
+         <button onclick="addNumero(this)">2</button>
+         <button onclick="addNumero(this)">3</button>
+         <button onclick="addNumero(this)">4</button>
+         <button onclick="addNumero(this)">5</button>
+         <button onclick="addNumero(this)">6</button>
+         <button onclick="addNumero(this)">7</button>
+         <button onclick="addNumero(this)">8</button>
+         <button onclick="addNumero(this)">9</button>
+         <button onclick="addNumero(this)">0</button>
+         <button onclick="addNumero(this)">.</button>
+         <button onclick="addNumero(this)">+</button>
+         <button onclick="addNumero(this)">-</button>
+         <button data-numero="*" onclick="multiply(this)">x</button>
+         <button data-numero="/" onclick="divided(this)">÷</button>
+         <button data-numero="*" onclick="de(this)">DELETE</button>
+         <button onclick="risultato()">=</button>
+        </div>
+ 
+     </div>
+   </div>
+   
+
+    <script src="js/script.js"></script>
+</body>
+</html>

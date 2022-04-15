@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body >
+    <header></header>
+    <main>
+        <iframe class="frame" width="560" height="315" src="https://www.youtube.com/embed/zccIVhaAm30?controls=0&autoplay=1&mute=1&loop=1" option= "autoplay" title="YouTube video player" frameborder="0"   allowfullscreen></iframe>
+        <div class="overlay"></div>
+        <div id="base">
+            <h1> &spades;D.R.E.A.M.S.&spades; </h1>
+            <table id="calcolatrice">
+                <input type="text" id="display">
+                
+                <tr>
+                  <td><button onclick="addNumero(this);play()">7</button></td>
+                  <td><button onclick="addNumero(this);play()">8</button></td>
+                  <td><button onclick="addNumero(this);play()">9</button></td>
+                  <td><button onclick="addNumero(this);play()">-</button></td>
+                </tr>      
+                <tr>
+                  <td><button onclick="addNumero(this);play()">4</button></td>
+                  <td><button onclick="addNumero(this);play()">5</button></td>
+                  <td><button onclick="addNumero(this);play()">6</button></td>
+                  <td><button onclick="addNumero(this);play()">+</button></td>
+                </tr>      
+                <tr>
+                  <td><button data-numero="1" onclick="addNumero(this);play()">1</button></td>
+                  <td><button onclick="addNumero(this);play()">2</button></td>
+                  <td><button onclick="addNumero(this);play()">3</button></td>
+                  <td><button data-numero="/" onclick="divided(this);play()">÷</button></td>
+                  
+                </tr>  
+                <tr>
+                  <td><button onclick="addNumero(this);play()">0</button></td>
+                  <td><button data-numero="*" onclick="multiply(this);play()">x</button></td>
+                  <td><button onclick="addNumero(this);play()">.</button></td>
+                  <td><button data-numero="*" onclick="de(this);play()">C</button></td>    
+                     
+                </tr>  
+                <tr>
+                    <td><button></button></td>
+                    <td><button onclick="risultato();play()">=</button></td>
+                    <td><button onclick="risultato();play()">=</button></td>
+                    <td><button></button></td>
+                </tr>
+              </table>
+        </div>
+        <audio id="audio" src="audio/combobreak-online-audio-converter_06FGwjv.mp3"></audios>
+        
+       
+    </main>
+   
+      <script src="js/script.js"></script>
+</body>
+</html>
