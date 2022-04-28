@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+       
+        <div class="container">
+            <label for="apri-menu" id="toggle">Ω</label>
+            <input id="apri-menu" type="checkbox">
+          <ul id="home">
+            <a href="#">Home</a>
+            <a href="#">Contatti</a>
+            <a href="#">Blog</a>
+            <a href="#">More Info</a>
+          </ul>
+        </div>
+        
+        <div class="sfondo">
+            <h1 id="lol"></h1>
+            <input type="button" value="grande" onclick="document.getElementById('lol').style.fontSize = '300px'">
+            <input type="button" value="Piccolo" onclick="document.getElementById('lol').style.fontSize = '10px'">
+            <input type="button" value="colore" onclick="document.getElementById('lol').style.color = 'purple'">
+            <input type="button" value="nascondi" onclick="document.getElementById('lol').style.visibility = 'hidden'">
+            <input type="button" value="mostrare" onclick="document.getElementById('lol').style.visibility = 'visible'">
+        </div>
+        <div id="lista">
+        
+            <h4>Lista Æ</h4>
+            <ul>
+                <li>Food</li>
+                <li>Cibo</li>
+                <li>Comida</li>
+               
+            </ul>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

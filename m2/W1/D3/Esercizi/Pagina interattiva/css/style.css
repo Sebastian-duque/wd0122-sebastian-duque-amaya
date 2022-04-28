@@ -1,0 +1,56 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    line-height:2;
+
+    height: 100vh;
+    width:auto;
+    height: 130vh;
+}
+h1{
+    font-size: 5rem;
+}
+#lista{
+    display: flex;
+    flex-direction: column;
+}
+#home{
+    
+    height: 0;
+    overflow: hidden;
+}
+#apri-menu{
+    display: none;
+    opacity: 1;
+}
+#toggle{
+    opacity: 1;
+}
+#toggle{
+    font-size: 50px;;
+    color: orangered;
+}
+input:checked + #home{
+    height: 100px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    line-height: 1;
+ 
+}
+.container{
+    background-color:lightgreen;
+    padding-top:10px;
+    padding-bottom:10px;
+
+}
+.sfondo{
+    background-color:lightcoral;
+    padding-bottom:10px;
+}
+#lista{
+    background-color: lightblue;
+    height: 700px;;
+}
