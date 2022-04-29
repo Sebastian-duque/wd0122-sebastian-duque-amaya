@@ -5,9 +5,12 @@ let arrayAnimali = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '�
 
 let arrayComparison = [];
 
-document.body.onload = startGame();
+document.body.onload = startGame()
 
-// mi serviranno alcune variabili 1. interval 2. una agganciata alla classe find 
+
+// mi serviranno alcune variabili 1. interval 2. una agganciata alla classe find
+var interval;
+getElementsByClassName(arrayAnimali)
 // 3. una agganciata al'id modal 4. una agganciata alla classe timer
 
 
@@ -29,7 +32,10 @@ function shuffle(a) {
 // una funzione che rimuove la classe active e chiama la funzione startGame()
 
 // la funzione startGame che pulisce il timer, dichiara un array vuoto, mescola casualmente l'array degli animali
+funtion.startGame()
 // (var arrayShuffle = shuffle(arrayAnimali);), aggancia il contenitore con id griglia, 
+var arrayShuffle = shuffle(arrayAnimali)
+
 // pulisce tutti gli elementi che eventualmente contiene
 // poi fa ciclo per creare i 24 div child -> aggiunge la class e l'elemento dell'array in base all'indice progressivo
 // chiama la funzione timer e associa a tutti gli elementi (div) di classe icon l'evento click e le due funzioni definit sotto

@@ -127,17 +127,21 @@
 }
 
 @keyframes indovinato { /* animazione quando si indovina */
-    from {
+    from {transform: rotate(0deg);
     }
-    to {
+    to {transform: rotate(360deg)
     }
+    
 }
 
 @keyframes rotazione-carta { /* animazione quando ruota la carta */
-    from {
+    from {transform: perspective(300px) rotate3d(0, 1, 0, 80deg);
+        animation-timing-function: ease-in;
     }
-    50% {
+    50% {transform: perspective(300px) rotate3d(0, 1, 0, -10deg);
+        animation-timing-function: ease-in;
     }
-    to {
+    to {transform: perspective(300px);
+        animation-timing-function: ease-in;
     }
 }
