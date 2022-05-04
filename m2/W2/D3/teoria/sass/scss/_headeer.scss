@@ -1,0 +1,10 @@
+header{
+    height: 100px;
+
+    li {background-color: blue;
+        color: white;
+        &:hover{
+            background-color:purple;
+        }
+    }
+}

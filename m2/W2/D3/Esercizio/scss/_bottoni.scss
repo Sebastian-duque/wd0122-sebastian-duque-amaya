@@ -1,0 +1,29 @@
+.showcase-content{
+    
+    .btn-primary{
+        font-family: 'Water Brush', cursive;
+        background-color: blueviolet;
+        text-decoration: none;
+        color: white;
+        padding: 15px 30px;
+        border-radius:5px;
+        margin-top: 10px;
+        margin-right: 5px;
+        &:hover{
+            background-color: lightseagreen;
+        }
+    }
+    .btn-secondary{
+        font-family: 'Water Brush', cursive;
+        background-color:#f84c2f;
+        text-decoration: none;
+        color: white;
+        padding: 15px 30px;
+        border-radius:5px;
+        margin-top: 10px;
+        &:hover{
+            background-color: lightpink;
+        }
+    }
+}
+

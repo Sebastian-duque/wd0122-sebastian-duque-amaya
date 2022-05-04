@@ -1,0 +1,31 @@
+@import 'bottoni';
+@import 'variabili';
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: lightcoral;
+}
+.showcase-content{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    
+}
+img{
+    height: 50%;
+    width: auto;
+    border-radius: 10px;
+}

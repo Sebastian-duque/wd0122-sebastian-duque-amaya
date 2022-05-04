@@ -1,0 +1,66 @@
+.showcase-content .btn-primary {
+  font-family: 'Water Brush', cursive;
+  background-color: blueviolet;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 5px; }
+  .showcase-content .btn-primary:hover {
+    background-color: lightseagreen; }
+
+.showcase-content .btn-secondary {
+  font-family: 'Water Brush', cursive;
+  background-color: #f84c2f;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-top: 10px; }
+  .showcase-content .btn-secondary:hover {
+    background-color: lightpink; }
+
+body {
+  margin-left: 30px;
+  margin-right: 30px; }
+  body h1 {
+    font-size: 2rem; }
+  body .logo {
+    font-size: 3rem; }
+  body .my-1 {
+    font-size: 1.5rem; }
+  body p {
+    line-height: 2;
+    text-decoration: none; }
+  body ul li {
+    padding: 5px;
+    text-decoration: none; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: lightcoral; }
+
+.showcase-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none; }
+
+ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  text-decoration: none;
+  margin: 5px; }
+
+img {
+  height: 50%;
+  width: auto;
+  border-radius: 10px; }
