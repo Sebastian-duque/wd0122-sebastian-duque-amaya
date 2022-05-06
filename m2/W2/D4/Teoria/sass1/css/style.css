@@ -1,0 +1,26 @@
+h1 {
+  margin-top: 10px;
+  margin-top: 10px;
+  color: #808080;
+  font-weight: bold;
+  background-color: #fff; }
+
+p {
+  margin-top: 10px;
+  margin-top: 10px;
+  color: #808080;
+  font-weight: 400;
+  background-color: purple; }
+
+#p1 {
+  color: orange;
+  height: calc(150px / 2); }
+
+#p2 {
+  background-color: orange;
+  color: #fff;
+  width: 33.33333px; }
+
+#d1 {
+  background-color: yellow;
+  color: yellow; }

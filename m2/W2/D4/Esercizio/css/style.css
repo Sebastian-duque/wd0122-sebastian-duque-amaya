@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+.warning-button {
+  color: #fff;
+  padding: 10px;
+  background-color: #2093da;
+  border-radius: 5px; }
+
+header {
+  background-color: #43ad91;
+  border-radius: 5px;
+  border-color: 5px black;
+  box-shadow: 2px 4px 2px #9f9797; }
+
+#main-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-decoration: none; }
+
+ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none; }
+
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-areas: "articles" "aside"; } }
+
+#footer {
+  height: 100px;
+  width: auto;
+  background-color: lightseagreen; }

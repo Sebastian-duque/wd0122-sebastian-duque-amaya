@@ -1,0 +1,42 @@
+@import 'functions';
+@mixin testi($peso, $bg) {
+    margin-top: 10px;
+    color:#808080;
+    font-weight: #{$peso};
+    background-color: #{$bg};
+}
+@mixin colore($modifica,$valore){
+    #{$modifica}color: $valore 
+}
+h1{
+    margin-top: 10px;
+    @include testi(bold, #fff);
+}
+p{
+    margin-top: 10px;
+    @include testi(400, purple);
+}
+#p1{
+    @include colore('',orange);
+    height: calc(150px / 2);
+}
+#p2{
+    @include colore('background-',orange);
+    color: #fff;
+    width: miaFunzione(3);
+}
+$sfondo: rgb(40, 40, 35);
+#d1{
+    background-color: $sfondo;
+    color: set-color-pro($colore, lightpink);
+}
+.main_div{
+    margin: 5px;
+    border-top: 1px solid #ccc;
+    width: 250px;
+}
+.special_div{
+    @extend .main_div;
+    height: 250px;
+    margin-left: auto;
+}

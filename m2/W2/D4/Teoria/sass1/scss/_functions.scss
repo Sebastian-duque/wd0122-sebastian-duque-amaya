@@ -1,0 +1,19 @@
+@function miaFunzione($n){
+    @return 100/$n + px;
+}
+
+@function set-color($colore){
+    $luminosity : lightness($colore);
+    @if($luminosity >= 50){
+        @return #000; 
+    }@else{
+        @return #fff; 
+    }
+}
+@function set-color-pro($sfondo,$colore){
+    @if(lightness($sfondo) >= 50){
+        @return darken($colore,30%); 
+    }@else{
+        @return lighten($colore,30%); 
+    }
+}

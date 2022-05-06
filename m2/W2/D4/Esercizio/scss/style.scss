@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import 'variabili';
+header{
+    background-color: rgb(67, 173, 145);
+    border-radius: 5px;
+    border-color: 5px rgb(0, 0, 0);
+    box-shadow: 2px 4px 2px rgb(159, 151, 151);
+}
+#main-menu{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+@media screen and (min-width:800px) {
+    main{
+        display: grid;
+        
+        grid-template-areas: 
+        "articles" "aside"
+        ;
+    }
+    
+}
+
+
+
+
+#footer{
+    height:100px;
+    width:auto;
+    background-color: lightseagreen;
+}
