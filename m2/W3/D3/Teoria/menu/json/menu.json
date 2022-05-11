@@ -1,0 +1,44 @@
+[
+    {
+        "gusto": "Margherita",
+        "tipo": "napoletana",
+        "prezzo": 3,
+        "dimensioni": [
+            "mini",
+            "normale",
+            "mezzo metro"
+        ],
+        "disponible":true
+    },
+    {
+        "gusto": "Diavola",
+        "tipo": "napoletana",
+        "prezzo": 5,
+        "dimensioni": [
+            "mini",
+            "normale",
+            "mezzo metro"
+        ],
+        "disponible":true
+    },
+    {
+        "gusto": "Mimosa",
+        "tipo": "napoletana",
+        "prezzo": 7,
+        "dimensioni": [
+     
+            "normale"
+        ],
+        "disponible":true
+    },
+    {
+        "gusto": "Hawaina",
+        "tipo": "napoletana",
+        "prezzo": 50,
+        "dimensioni": [
+            "mini"
+       
+        ],
+        "disponible":false
+    }
+]

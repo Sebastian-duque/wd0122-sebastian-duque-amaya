@@ -1,0 +1,54 @@
+{
+    "studenti":[
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Luca",
+            "iscrizione": "Marzo"
+        },
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Nicolas",
+            "iscrizione": "Dicembre"
+        },
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Lucrezia",
+            "iscrizione": "Febbario"
+        },
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Matteo",
+            "iscrizione": "Gennaio"
+        },
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Mattia",
+            "iscrizione": "Aprile"
+
+        },
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Roberta",
+            "iscrizione": "Dicembre"
+        },
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Chloe",
+            "iscrizione": "Gennaio"
+        },
+        {
+            "class": "frontend",
+            "year": 2022,
+            "nome": "Zoe",
+            "iscrizione": "Marzo"
+
+        }
+    ]
+}

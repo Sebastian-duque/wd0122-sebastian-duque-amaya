@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="text" id="nome">
+    <input type="text" id="cognome">
+    <input type="date" id="nascita">
+    <button onclick="aggiungi()">add</button>
+
+    <div id="table">
+        <div class="row">
+            <div class="col">Nome completo</div>
+            <div class="col">EtÃ </div>
+        </div>
+
+        <!-- <div class="row">
+        <div class="col">Marco Rossi</div>
+        <div class="col">13</div>
+    </div> -->
+    </div>
+
+
+    <script>
+        function aggiungi() {
+            //leggere i dati
+            //creare l'utente
+            let utente = new Utente(document.querySelector("#nome").value, document.querySelector("#cognome").value,
+                document.querySelector("#nascita").value)
+            document.getElementsByClassName("test")[0].value
+            // console.log(utente);
+            //inserire utetnte nella tabella
+            utente.aggiungiAllaPagina()
+        }
+
+        // let utente = {
+        //     nome: "Marco",
+        //     cognome: "Rossi",
+        //     nascita: new Date("1990/05/04")
+        // }
+        class Utente {
+            constructor(n, c, dn) {
+                this.nome = n
+                this.cognome = c
+                this.nascita = new Date(dn)
+                console.log("Oggetto costruito")
+            }
+
+            getFullName() {
+                return this.nome + " " + this.cognome
+            }
+
+            getEta() {
+                let oggi = new Date()
+                oggi = oggi.getFullYear()
+                return oggi - this.nascita.getFullYear()
+            }
+
+            aggiungiAllaPagina() {
+                let row = document.createElement("div")
+                row.classList.add("row")
+                let colNome = document.createElement("div")
+                colNome.classList.add("col")
+                let colEta = document.createElement("div")
+                colEta.classList.add("col")
+
+                colNome.innerText = this.getFullName()
+                colEta.innerText = this.getEta()
+
+                row.append(colNome, colEta)
+
+                document.querySelector("#table").append(row);
+            }
+        }
+
+
+        function Persona(n, c, dn) {
+            this.nome = n
+            this.cognome = c
+            this.nascita = new Date(dn)
+
+            this.getFullName = function () {
+                return this.nome + " " + this.cognome
+            }
+
+            this.getEta = function () {
+                let oggi = new Date()
+                oggi = oggi.getFullYear()
+                return oggi - this.nascita.getFullYear()
+            }
+
+            this.aggiungiAllaPagina = function () {
+                let row = document.createElement("div")
+                row.classList.add("row")
+                let colNome = document.createElement("div")
+                colNome.classList.add("col")
+                let colEta = document.createElement("div")
+                colEta.classList.add("col")
+
+                colNome.innerText = this.getFullName()
+                colEta.innerText = this.getEta()
+
+                row.append(colNome, colEta)
+
+                document.querySelector("#table").append(row);
+            }
+
+        }
+
+        let p = new Persona("Marco", "Rossi", "1990/05/04")
+    </script>
+
+</body>
+
+</html>
