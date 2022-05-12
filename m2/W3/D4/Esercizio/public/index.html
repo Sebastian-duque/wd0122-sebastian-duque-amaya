@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>prova</h1>
+    <table id="utenti"></table>
+    <table id="foto"></table>
+    
+    <script>
+    const APPURL = 'https://jsonplaceholder.typicode.com/users'
+    let tabella = document.querySelector('#utenti')
+    fetch(APPURL)
+    .then(res=> res.json())
+    .then(res => {
+    console.log(res)
+    
+    for(let utente of res){
+    let tr = document.createElement('tr')
+
+    let tdNome =document.createElement('td')
+    tdNome.innerHTML = utente.name
+    let tdCognome =document.createElement('td')
+    tdCognome.innerHTML = utente.lastname
+
+    tr.append(tdNome, tdCognome)
+    tabella.append(tr)
+    }
+})
+
+    </script>
+</body>
+</html>
