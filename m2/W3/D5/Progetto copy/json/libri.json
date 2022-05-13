@@ -1,0 +1,128 @@
+{
+    "elenco libri":[
+        {
+            "Writer": "virginia woolf",
+            "born": 1882,
+            "bestseller": "Orlando",
+            "books": [
+                {
+                    "title": "Mrs Dalloway",
+                    "year": 1925
+                },
+                {
+                    "title": "A Room of One's Own",
+                    "year": 1929
+                },
+                {
+                    "title": "Orlando: A Biography",
+                    "year": 1928
+                },
+                {
+                    "title": "The Waves",
+                    "year": 1931
+                }
+                
+                
+            ]
+        },
+        {
+            "Writer": "j. r. r. tolkien",
+            "born": 1892,
+            "bestseller": "The Lord of the rings",
+            "books": [
+                {
+                    "title": "The Hobbit, or There and Back Againy",
+                    "year": 1937
+                },
+                {
+                    "title": "The Silmarillion",
+                    "year": 1977
+                },
+                {
+                    "title": "Unfinished Tales of Numenor and Middle-earth",
+                    "year": 1980
+                },
+                {
+                    "title": "The Return of the King",
+                    "year": 1955
+                }
+                
+                
+            ]
+        },
+        {
+            "Writer": "Thomas Mann",
+            "born": 1875,
+            "bestseller": "L'eletto ",
+            "books": [
+                {
+                    "title": "Death of Venice",
+                    "year": 1912
+                },
+                {
+                    "title": "The Magic Mountain",
+                    "year": 1924
+                },
+                {
+                    "title": "Doctor Faustus",
+                    "year": 1947
+                },
+                {
+                    "title": "Tonio Krogee",
+                    "year": 1903
+                }
+                
+                
+            ]
+        },
+        {
+            "Writer": "Mark Twain",
+            "born": 1835,
+            "bestseller": "The Innocents Abroad",
+            "books": [
+                {
+                    "title": "The Innocents Abroad",
+                    "year": 1869
+                },
+                {
+                    "title": "What is Man?",
+                    "year": 1906
+                },
+                {
+                    "title": "Luck",
+                    "year": 1891
+                },
+                {
+                    "title": "The War Prayer",
+                    "year": 1916
+                }
+            
+            ]
+        },
+        {
+            "Writer": "Agatha Christie",
+            "born": 1890,
+            "bestseller": "The Murder of Roger Ackroyd: A Hercule Poirot Mystery",
+            "books": [
+                {
+                    "title": "The Murder of Roger Ackroyd: A Hercule Poirot Mystery",
+                    "year": 1926
+                },
+                {
+                    "title": "Thirteen Problems",
+                    "year": 1932
+                },
+                {
+                    "title": "Murder on the Orient Express: A Hercule Poirot Mystery",
+                    "year": 1934
+                },
+                {
+                    "title": "And Then There Were None",
+                    "year": 1939
+                }
+            
+            ]
+        }
+       
+    ]
+}
