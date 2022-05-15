@@ -1,82 +1,23 @@
+fetch("users.json").then(
+    res=>{
+        res.json().then(
+            data=>{
+                console.log(data);
+                if(data.length > 0){
+                    var temp = "";
 
-/*const JSON = './json/libri.json'
-let tabella = document.querySelector('#table')
-
-        fetch('JSON')
-        .then(res => res.json())
-        .then(res => {
-
-            console.log(res);
-
-            for(let table of res){
-                
-                let tr = document.createElement('tr')
-
-
-                let tdWriter = document.createElement('td')
-                tdWriter.innerHTML = utente.writer
-
-                let tdBorn = document.createElement('td')
-                tdBorn.innerHTML = utente.born
-                tr.append(tdWriter, tdBorn, Bestseller, Books)
-
-                let tdBestseller = document.createElement('td')
-                tdBestseller.innerHTML = utente.bestseller
-                tr.append(tdWriter, tdBorn, Bestseller, Books)
-
-                let tdBooks = document.createElement('td')
-                tdBooks.innerHTML = utente.books
-                tr.append(tdWriter, tdBorn, Bestseller, Books)
-
-                let tdAzioni = document.createElement('td')
-
-                let btnElimina = document.createElement('button')
-                btnElimina.innerHTML = 'Elimina'
-
-            
-
-                tdAzioni.append(btnElimina)
-
-
-                tr.append(tdAzioni)
-                
-               
-               tabella.append(tr)
-
-                
+                    data.forEach((u)=>{
+                        temp +="<tr>";
+                        temp +="<td>"+u.id+"</td>";
+                        temp +="<td>"+u.username+"</td>";
+                        temp +="<td>"+u.firstName+"</td>";
+                        temp +="<td>"+u.lastName+"</td>";
+                        temp +="<td>"+u.gender+"</td>";
+                        temp +="<td>"+u.email+"</td></tr>";
+                    })
+                    document.getElementById("data").innerHTML = temp;
+                }
             }
-
-        })*/
- /*let response = fetch(url)
-
- fetch('users.json')
- .then(response => response.json())
- .then()
-*/
- async function getUser(){
-     let url = './users.json';
-     try {
-         let response = await fetch(url);
-         return await response.json();
-     }catch(error){
-
-     }
+        )
     }
-    async function renderUsers() {
-        let users = await getUsers();
-        let html = '';
-        users.forEach(user => {
-            let htmlSegment = `<div class="user">
-                                <img src="${user.profileURL}" >
-                                <h2>${user.firstName} ${user.lastName}</h2>
-                                <div class="email"><a href="email:${user.email}">${user.email}</a></div>
-                            </div>`;
-    
-            html += htmlSegment;
-        });
-    
-        let container = document.querySelector('.container');
-        container.innerHTML = html;
-    }
-    
-    renderUsers();
+)
