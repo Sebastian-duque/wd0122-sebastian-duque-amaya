@@ -1,6 +1,7 @@
 
 body{
     font-family: 'Lato', sans-serif !important;
+    overflow-x: hidden;
 }
 
 table{
@@ -19,37 +20,38 @@ table th{
     border-bottom: 1px solid lightgray;
 }
 
-/* .tr-users:hover{
-    box-shadow: 0px 2px 1px lightgray, 0px -2px 1px lightgray;
+.btn{
+    border-radius: 20px !important;
 }
 
 .btn:hover{
     transform: scale(1.05) !important;
 }
 
-.btn-success{
-    background: rgb(34,195,115);
-    background: linear-gradient(180deg, rgb(25, 163, 94) 0%, rgb(8, 224, 127) 100%);
-    border: none !important;
-}
-.btn-info{
-    background: rgb(34,137,195);
-    background: linear-gradient(180deg, #6cc2f4 0%, #4ab6e4 100%);
-    border: none !important;
-}
-.btn-warning{
-    background: rgb(195,162,34);
-background: linear-gradient(180deg, rgb(255, 200, 59) 0%, rgba(254,246,84,1) 100%);
-    border: none !important;
-}
-.btn-danger{
-    background: rgb(195,34,34);
-    background: linear-gradient(180deg, rgba(195,34,34,1) 0%, rgba(254,131,84,1) 100%);
-    border: none !important;
-} */
-
 .main{
-    height: 30vw;
+    height: 35vw;
+    display: flex;
+    align-items: end;
+    background-image: url(../img/emile-perron-xrVDYZRGdw4-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    box-shadow: 0 0 5px #000;
+}
+
+.main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(127,32,195);
+    background: linear-gradient(99deg, rgba(127,32,195,1) 0%, rgba(201,82,210,1) 50%, rgba(84,231,254,1) 100%);
+    opacity: .5;
+}
+.utenti{
+    height: 20vw;
     display: flex;
     align-items: center;
     background-image: url(../img/ux-indonesia-qC2n6RQU4Vw-unsplash_1.jpg);
@@ -57,6 +59,67 @@ background: linear-gradient(180deg, rgb(255, 200, 59) 0%, rgba(254,246,84,1) 100
     position: relative;
 }
 
+.utenti::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+}
+
+.main-cont{
+    z-index: 100;
+    margin-bottom: 80px;
+}
+.utenti-cont{
+    z-index: 100;
+}
+
 .accordion-button{
     margin-top: -30px;
+}
+
+.details{
+    padding: 80px !important;
+}
+
+.skills{
+    background-color: #eeeeee;
+    padding: 80px;
+    box-shadow: 0 0 5px #000;
+}
+
+.skills i{
+    color: rgb(0, 145, 255);
+}
+
+.card-title{
+    color: rgb(0, 183, 255);
+}
+
+footer{
+    padding: 50px;
+    background-color: rgb(73, 67, 78);
+    color: #fff;
+    box-shadow: 0 0 5px #000;
+}
+
+.titolo-bw {
+    color: palevioletred;
+    font-family: monospace;
+    border-right: .15em solid #000; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    padding-right:00px;
+    letter-spacing: .15em;
+    animation: blink .5s step-end           infinite alternate;;
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink {
+50% { border-color: transparent}
 }

@@ -7,6 +7,28 @@ target.append(tabella)
 
 let users = []
 
+function typingEffect(element, speed){
+  let text=element.innerHTML;
+  element.innerHTML="";
+ var i=0;
+  var timer=setInterval(function(){
+    if(i<text.length){
+      element.append(text.charAt(i))
+      i++;
+    }else{
+      clearInterval(timer);
+    }
+  },speed)
+  
+}
+
+const titoloBw = document.querySelector('.titolo-bw');
+
+setInterval(() => {
+    typingEffect(titoloBw,150)
+}, 3500);
+
+
 function createTable(arrayTr) {
 
     tabella.innerHTML = ""
@@ -66,7 +88,6 @@ function createTable(arrayTr) {
         
         form.addEventListener('input', function () {
             emailCondition = emailInp.value.match(regex)
-            console.log(emailCondition)
 
             if (nomeInp.value.length >= 2 && usernameInp.value != '' && emailCondition && telefonoInp.value != '') {
                 newBtn.setAttribute('data-bs-dismiss', 'modal')
@@ -221,7 +242,6 @@ fetch(APPURL)
             `
 
                 targetEdit.append(divEdit)
-                console.log(idEdit);
 
                 let editBtn = document.querySelector('#edit')
 
@@ -236,7 +256,6 @@ fetch(APPURL)
 
                 editForm.addEventListener('input', function () {
                     emailCondition = emailInp.value.match(regex)
-                    console.log(emailCondition)
         
                     if (nomeInp.value.length >= 2 && usernameInp.value != '' && emailCondition && telefonoInp.value != '') {
                         editBtn.setAttribute('data-bs-dismiss', 'modal')
@@ -350,7 +369,8 @@ fetch(APPURL)
             }
             let pageItem = document.querySelectorAll('.page-item')
             for (let page of pageItem) {
-                page.addEventListener('click', function () {
+                page.addEventListener('click', function (e) {
+                    e.preventDefault()
                     document.querySelector('.active').classList.remove('active')
                     this.classList.add('active')
                     tabella.innerHTML = ''
