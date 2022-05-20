@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container">
+            <h1 class="text-center p-3 bg-light rounded-pill"><i class="bi bi-code me-3"></i>Lista Utenti - Build Week 2<i class="bi bi-code-slash ms-3"></i></h1>
+        </div>
+    </div>
+
+    <div id="target" class="container">
+
+        <!-- ACCORDION RICERCA -->
+        <div class="accordion mb-3" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h6><i class="bi bi-search me-2"></i> Ricerca utenti</h6>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div id="search-container" class="mb-3 row w-100">
+                            <div class="col align-self-start">
+                                <h6>Ricerca: </h6>
+                                <input class="form-control" type="text" id="input-search" placeholder="Ricera Utente">
+                            </div>
+
+                            <div class="col align-self-start">
+                                <h6>Ricerca tramite username:</h6>
+                                <input list="data-username" class="form-select" id="select-username">
+                                <datalist id="data-username">
+
+                                </datalist>
+
+                            </div>
+
+                            <div class="col align-self-start">
+                                <h6>Ricerca tramite ID:</h6>
+                                <input id="search-input" class="form-control me-2" type="number"
+                                    placeholder="Inserisci ID utente" aria-label="Search">
+                                <button id="search-btn-id" class="btn btn-outline-info justify-self-end mt-2"
+                                    type="submit">Cerca tramite ID</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW TARGET -->
+            <div id="newTarget" class="container"></div>
+
+        </div>
+
+
+
+        <!-- MODAL NEW USER-->
+        <div class="modal fade" id="newModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Aggiungi nuovo utente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div id="modal-new" class="modal-body">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL DELETE-->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Elimina utente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div id="modal-delete" class="modal-body"></div>
+
+                    <div class="modal-footer">
+                        <button id="annulla-delete" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Annulla</button>
+                        <button id="cancella" type="button" class="btn btn-danger"
+                            data-bs-dismiss="modal">Elimina</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL EDIT-->
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modifica utente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div id="modal-edit" class="modal-body">
+
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL VIEW-->
+        <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Visualizza utente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div id="modal-view" class="modal-body">
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="annulla-view" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL RICERCA-->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Visualizza utente</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div id="modal-search" class="modal-body">
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="annulla-search" type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PAGINAZIONE -->
+    </div>
+
+    <div class="row my-4 align-items-center">
+
+        <div class="col-6">
+            <nav aria-label="Page navigation example">
+                <div class="pagination container justify-content-end mt-1" id="pagination">
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="col-3">
+            <div class="input-group">
+                <label class="align-self-center pe-2">Utenti per pagina:</label>
+                <select class="form-select" id="select-pag" aria-label="Example select with button addon">
+                    <option value="10">10</option>
+                    <option value="5">5</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+
+body{
+    font-family: 'Lato', sans-serif !important;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    font-size: 20px;
+}
+
+.tr-th{
+    border-bottom: 3px solid black;
+}
+
+.tr-users{
+    border-bottom: 1px solid lightgray;
+}
+
+#search-container{
+    width: 400px;
+}
+
+
