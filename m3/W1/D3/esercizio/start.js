@@ -27,10 +27,14 @@ var Lavoratore = /** @class */ (function () {
 }());
 var Artigiano = /** @class */ (function (_super) {
     __extends(Artigiano, _super);
-    function Artigiano() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Artigiano(ra, rc) {
+        var _this = _super.call(this, ra, rc) || this;
+        _this.tasseInps = 5;
+        _this.tasseIperf = 10;
+        return _this;
     }
-    Artigiano.prototype.getRedditoAnnuoNetto = function () {
+    Artigiano.prototype.getRedditoNetto = function () {
+        return this.redditoAnnualeLordo - (this.getTasseIperf());
     };
     return Artigiano;
 }(Lavoratore));

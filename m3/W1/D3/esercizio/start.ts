@@ -4,6 +4,8 @@ abstract class Lavoratore{
     tasseInps:number;
     tasseIperf:number;
 
+    
+
     constructor(codredd:number, redditoAnnualeLordo:number, tasseInps:number, tasseIperf:number){
         this.codredd = codredd;
        /*this.redditoAnnualeLordo = redditoAnnualeLordo;
@@ -21,9 +23,13 @@ abstract class Lavoratore{
 }
 
 class Artigiano extends Lavoratore {
-
-    getRedditoAnnuoNetto():number {
-        
+    constructor(ra:number, rc:number){
+        super(ra, rc);
+        this.tasseInps = 5
+        this.tasseIperf = 10
+    }
+    getRedditoNetto():number{
+        return this.redditoAnnualeLordo - (this.getTasseIperf())
     }
 }
 class LiberoProfessionista extends Lavoratore {
