@@ -1,0 +1,16 @@
+
+<h1>{{title}}</h1>
+
+<input type="text" placeholder="Inserisci nuovo todo" #task/>
+
+<button (click)="addTask(task.value)">Aggiungi</button>
+
+<ul *ngFor="let item of list">
+  <li>
+    {{item.name}} <button (click)="removeTask(item.id)">Remove</button>
+    <button (click)="ModifyTask(item.id)">Modify</button>
+  </li>
+</ul>
+
+
+<router-outlet></router-outlet>

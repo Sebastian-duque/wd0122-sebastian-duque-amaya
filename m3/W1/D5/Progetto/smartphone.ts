@@ -15,15 +15,14 @@ class FirstUser implements ISmartphone {
     costoChiamata: number
     
     constructor(carica:number, numeroChiamate:number){
-        this.carica = 20;
+        this.carica = carica;
         this.numeroChiamate = numeroChiamate;
         this.costoChiamata = 0.20;
 
-        let x = this.carica
-        console.log(x);
+
     }
     
-
+    
     
     
     
