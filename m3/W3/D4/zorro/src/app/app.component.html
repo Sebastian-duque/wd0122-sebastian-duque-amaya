@@ -1,0 +1,15 @@
+<nz-layout class="dashboard-layout">
+  <nz-sider>
+    <ul nz-menu nzTheme="dark">
+      <li nz-menu-item><a [routerLink]="['/']"></a>home</li>
+      <li nz-menu-item><a [routerLink]="['/profilo']"></a>profilo</li>
+      <li nz-menu-item><a [routerLink]="['/info']"></a>info</li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+
+</nz-layout>
