@@ -1,0 +1,75 @@
+<header>
+    <div class="py-2 bg-dark text-white">
+        <div class="container">
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-between align-items-center my-md-0 text-small">
+                <ul class="nav">
+                    <li>
+                        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                            class="nav-link text-secondary row text-center">
+                            <i class="bi bi-house-door col-12 fs-2"></i>
+                            <p class="col-12">Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a *ngIf="isUserLogged()" [routerLink]="['/new']" routerLinkActive="active"
+                            class="nav-link text-secondary row text-center">
+                            <i class="bi bi-file-earmark-plus col-12 fs-2"></i>
+                            <p class="col-12">New Post</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav gap-3" *ngIf="isUserLogged()">
+                    <li class="mt-1">
+                        <h4 class="m-0">Welcome {{username}}</h4>
+                    </li>
+                    <button class="btn btn-danger" (click)="logout()">Logout</button>
+                </ul>
+
+                <ul class="nav justify-content-evenly" *ngIf="!isUserLogged()">
+                    <li class="col-9">
+                        <form class="d-flex gap-2">
+                            <input type="email" [(ngModel)]="auth.email" class="form-control" name="email"
+                                placeholder="Email">
+                            <p class="text-danger position-absolute mt-5" *ngIf="wrongData">Wrong Email or Password</p>
+                            <input type="password" [(ngModel)]="auth.password" class="form-control" name="password"
+                                placeholder="Password">
+                            <button type="button" (click)="login()" class="btn btn-light text-dark">Login</button>
+                        </form>
+                    </li>
+                    <li class="text-end mb-md-0 mb-4">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">Sign-up</button>
+
+                        <div class="offcanvas offcanvas-end text-black" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sign-up
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body text-start">
+                                <form>
+                                    <p>Name:</p><input type="text" [(ngModel)]="user.name" class="form-control"
+                                        placeholder="Name" name="name">
+                                    <p>Surname:</p><input type="text" [(ngModel)]="user.surname" class="form-control"
+                                        placeholder="Surname" name="surname">
+                                    <p>Username:</p><input type="text" [(ngModel)]="user.username" class="form-control"
+                                        placeholder="Username" name="username">
+                                    <p>Email:</p><input type="email" [(ngModel)]="user.email" class="form-control"
+                                        placeholder="Email" name="email">
+                                    <p>Password:</p> <input type="password" [(ngModel)]="user.password"
+                                        class="form-control" placeholder="Password" name="password">
+                                    <button class="btn btn-primary" [disabled]="signupCondition()" (click)="signup()"
+                                        type="button" data-bs-dismiss="offcanvas" aria-label="Close">Sign-up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</header>

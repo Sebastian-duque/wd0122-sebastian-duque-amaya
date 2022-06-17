@@ -1,0 +1,44 @@
+.pippo {
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+
+  i {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.pippa {
+  border-style: none;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.dropdown-menu {
+  min-width: 0 !important;
+}
+
+#dropdownMenuButton1 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin-top: -8px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.like {
+  margin-top: 10px !important;
+  font-size: 12px
+}

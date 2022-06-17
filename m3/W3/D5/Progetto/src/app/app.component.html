@@ -1,5 +1,9 @@
+<mat-toolbar color="primary">
+    <h1>Progetto</h1>
+    <ul class="navbar">
+      <li><a [routerLink]="['/home']">Home</a></li>
+      <li><a [routerLink]="['/info']">Info</a></li>
+      <li><a [routerLink]="['/login']">Login</a></li>
+    </ul>
+</mat-toolbar>
 <router-outlet></router-outlet>
-<app-navbar></app-navbar>
-<app-info></app-info>
-<app-home></app-home>
-<app-login></app-login>

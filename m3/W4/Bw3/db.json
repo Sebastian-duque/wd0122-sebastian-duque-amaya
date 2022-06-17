@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.it",
+      "password": "$2a$10$Z81P.PNCbWGKzKlxfDWceOiU/7/fsuBJXHa6vBASFsaC6oTdiyFie",
+      "name": "Admin",
+      "surname": "Admin",
+      "username": "Admin",
+      "id": 3
+    },
+    {
+      "email": "ciao@ciao.it",
+      "password": "$2a$10$tmQugb10//SZLbZh7m83Ye0CKemBLUQnadD2ZeE86PEZ6.l0togHC",
+      "name": "ciao",
+      "surname": "Saunders",
+      "username": "tevyf",
+      "id": 4
+    },
+    {
+      "email": "test@test.it",
+      "password": "$2a$10$bImGmixXTFkahjd3o8cEwuuv8aZJjtOxE1.06x2u0h1HqoJqxJFMS",
+      "name": "test",
+      "surname": "Brennan",
+      "username": "rixima",
+      "id": 5
+    },
+    {
+      "email": "kagud@mailinator.com",
+      "password": "$2a$10$QPK2TJ75wT.10IeLDQnHve3MDOOabYDqhQTNInY1e.FmKUmp8M1Ru",
+      "name": "Forrest Summers",
+      "surname": "Gilliam",
+      "username": "xirihesuq",
+      "id": 6
+    },
+    {
+      "email": "foracataz@mailinator.com",
+      "password": "$2a$10$G7HE70lOFDUZC8AYxN3qtuz8/HuWdpCxkPfbbza52jPtI8lk5ylC6",
+      "name": "Ronan Fernandez",
+      "surname": "Lowery",
+      "username": "vanej",
+      "id": 7
+    },
+    {
+      "email": "qybij@mailinator.com",
+      "password": "$2a$10$vz5pHdcRhagMRzTyLYnAieSvbOpz1x5YbB5ZuwzUV9ITHVNA9TgQi",
+      "name": "Flynn Wells",
+      "surname": "Whitehead",
+      "username": "gisoreqeti",
+      "id": 8
+    },
+    {
+      "email": "pupitok@mailinator.com",
+      "password": "$2a$10$MQq5mTJY.WKc9kKqPIfajOloZn94sWC3uPJwYQQtwO2uvYYb2zn/q",
+      "name": "Gannon Wiley",
+      "surname": "Lang",
+      "username": "jepumo",
+      "id": 9
+    },
+    {
+      "email": "pydytob@mailinator.com",
+      "password": "$2a$10$B9TZwNco.tqFbTvIFJJVZ.sgEpvrsxmrZ07q5n.IxeThPa8wlhIpy",
+      "name": "Katelyn Compton",
+      "surname": "Lester",
+      "username": "qiboniwa",
+      "id": 10
+    },
+    {
+      "email": "faxahulud@mailinator.com",
+      "password": "$2a$10$AcsTldX9Y.KucMz4EOB/2eaet9PRa6jvByNuOzZ2bXNOEuAJVnoLS",
+      "name": "Wylie Patterson",
+      "surname": "Hoover",
+      "username": "hilahami",
+      "id": 11
+    },
+    {
+      "email": "nirehocox@mailinator.com",
+      "password": "$2a$10$Hrcy53M.TZwFGSgGXP2Cx.vmr0Lc.iB3mb4lH0QmQPcQU98L8.nZu",
+      "name": "Peter Hines",
+      "surname": "Mcintyre",
+      "username": "nitolizog",
+      "id": 12
+    }
+  ],
+  "posts": [
+    {
+      "utente": "Admin",
+      "caption": "dfwfasdADGwegWEG",
+      "liked": [
+        4,
+        11
+      ],
+      "date": "Jun 17, 2022, 11:19",
+      "id": 13
+    },
+    {
+      "utente": "tevyf",
+      "caption": "ebebebrwyberdtuwsreyb",
+      "liked": [
+        4,
+        3,
+        5,
+        10,
+        11,
+        12
+      ],
+      "date": "Jun 17, 2022, 15:56",
+      "id": 15
+    },
+    {
+      "utente": "hilahami",
+      "caption": " ghxfgbx",
+      "liked": [
+        12
+      ],
+      "date": "Jun 17, 2022, 16:00",
+      "id": 16
+    }
+  ]
+}
